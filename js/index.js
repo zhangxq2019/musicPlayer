@@ -67,7 +67,7 @@ function $(selector){
 //把ajax封装
 function getMusicList(callback){
 var xhr = new XMLHttpRequest();
-xhr.open('GET','musicPlayer/music.json',true);
+xhr.open('GET','music.json',true);
 xhr.onload = function(){
     if((xhr.status >=200 && xhr.status < 300) || xhr.status == 304){
     callback(JSON.parse(xhr.responseText));
