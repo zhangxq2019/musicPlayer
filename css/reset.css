@@ -1,0 +1,30 @@
+.container::after
+,.music::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container .list {
+    list-style: none;
+}
+.container .list>li {
+    position: relative;
+    padding: 4px 10px;
+    border: 1px solid white;
+    border-top: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.container .list>li:hover {
+    background-color: rgba(255,255, 255,0.5);
+  }
+  .container .list>li.playing:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:'';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
+  }
