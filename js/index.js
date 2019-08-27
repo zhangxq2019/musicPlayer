@@ -65,7 +65,7 @@ function $(selector){
 }
 
 //把ajax封装
-function getMusicList(callback){
+function getmusicList(callback){
 var xhr = new XMLHttpRequest();
 xhr.open('GET','/music.json',true);
 xhr.onload = function(){
